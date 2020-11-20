@@ -48,4 +48,9 @@ public class UserController {
 	public int getCount() {
 		return userService.count();
 	}
+
+	public int getCountSameName(String name) {
+		
+		return userService.countSameName(name);
+	}
 }

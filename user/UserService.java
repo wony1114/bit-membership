@@ -9,6 +9,7 @@ public interface UserService {
 	public UserDTO mypage(UserDTO user);
 	public UserDTO[] list();
 	public UserDTO idSearch(String id);
+	public int countSameName(String name);
 	public UserDTO[] nameSearch(String name);
 	public int count();
 }
