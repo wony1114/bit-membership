@@ -81,10 +81,8 @@ public class UserMain {
 				for(int i = 0; i < userController.getCountSameName(name); i++) {
 					System.out.println(nameSearch[i].toString()+"\n");
 				}
-				
 				break;
 			case "10":
-				
 				System.out.printf("전체회원수 : %d명\n", userController.getCount());
 				break;
 			case "0":

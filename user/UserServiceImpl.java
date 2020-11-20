@@ -44,8 +44,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public void deleteUser(UserDTO user) {
 		for (int i = 0; i < count; i++) {
-			if (user.getUserid().equals(users[i].getUserid()) && user.getPassword().equals(users[i].getPassword()))
-				;
+			if (user.getUserid().equals(users[i].getUserid()) && user.getPassword().equals(users[i].getPassword()));
 			users[i] = users[count - 1];
 			users[count - 1] = null;
 			count--;

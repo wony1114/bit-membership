@@ -3,8 +3,10 @@ package gradebook;
 public class GradeServiceImpl implements GradeService {
 	private GradeDTO[] grades;
 	private int count;
+	
 	public GradeServiceImpl() {
 		grades = new GradeDTO[3];
+		count = 0;
 	}
 	@Override
 	public void addGrade(GradeDTO grade) {
